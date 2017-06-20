@@ -13,7 +13,6 @@ function toggleMenu(event) {
 function openLink(event) {
     event.preventDefault();
     console.log(this.textContent);
-    console.log(this.tagName);
 }
 
 function init(node) {
