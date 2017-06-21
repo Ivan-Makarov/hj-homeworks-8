@@ -9,9 +9,10 @@ function createItem(item) {
     }
 }
 
-function addItem(click) {
-    if (click.target.classList.contains('add-to-cart')) {
-        addToCart(createItem(click.target));
+function addItem(e) {
+    if (e.target.classList.contains('add-to-cart')) {
+        e.preventDefault();
+        addToCart(createItem(e.target));
     }
 }
 
