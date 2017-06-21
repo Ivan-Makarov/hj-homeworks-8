@@ -1,7 +1,7 @@
 'use strict';
 
 function toggleMenu(event) {
-    if (this.classList.contains('show') && event.target.dataset.toggle) {
+    if (this.classList.contains('show') && (event.target.dataset.toggle || event.target.classList.contains('icon-arrow'))) {
         this.classList.remove('show');
         this.classList.add('hide');
     } else {
